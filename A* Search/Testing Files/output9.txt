@@ -1,0 +1,8 @@
+28 nodes expanded
+cost = 770
+Trip London to Perth
+Trip Perth to London
+Trip London to Eastville
+Trip Eastville to London
+
+time taken: 0.0040265645

@@ -1,0 +1,47 @@
+
+Transfer 60 London 
+Transfer 40 Paris
+Transfer 40 Berlin
+Transfer 60 Amsterdam
+Transfer 80 Brussels
+Transfer 60 NewYork
+Transfer 40 Perth
+Transfer 80 Sydney
+Time 180 London Paris       
+Time 240 London Berlin       
+Time 180 London Amsterdam
+Time 100 London Brussels       
+Time 100 Paris Berlin
+Time 240 Paris Amsterdam       
+Time 120 Paris Brussels     
+Time 240 Berlin Amsterdam
+Time 220 Berlin Brussels       
+Time 200 Amsterdam Brussels
+
+Time 80 NewYork Paris
+Time 50 NewYork Berlin
+Time 300 NewYork Amsterdam
+Time 180 NewYork Brussels
+Time 230 NewYork London
+Time 60 NewYork Perth
+Time 120 NewYork Sydney
+
+Time 120 Perth Paris
+Time 200 Perth Berlin
+Time 250 Perth Amsterdam
+Time 200 Perth Brussels
+Time 200 Perth London
+Time 80 Perth Sydney
+
+Time 170 Sydney Paris
+Time 150 Sydney Berlin
+Time 320 Sydney Amsterdam
+Time 280 Sydney Brussels
+Time 250 Sydney London
+
+Trip Berlin Amsterdam
+Trip Paris Berlin
+Trip London Sydney
+Trip London Brussels 
+Trip Brussels Berlin
+Trip Amsterdam NewYork

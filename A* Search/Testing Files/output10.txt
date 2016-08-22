@@ -1,0 +1,14 @@
+12154 nodes expanded
+cost = 1950
+Trip London to Berlin
+Trip Berlin to Amsterdam
+Trip Amsterdam to NewYork
+Trip NewYork to Perth
+Trip Perth to NewYork
+Trip NewYork to Perth
+Trip Perth to London
+Trip London to Eastville
+Trip Eastville to London
+Trip London to Brussels
+
+time taken: 1.7164666351

@@ -1,0 +1,10 @@
+84 nodes expanded
+cost = 1200
+Trip London to Amsterdam
+Trip Amsterdam to London
+Trip London to Brussels
+Trip Brussels to Paris
+Trip Paris to Berlin
+Trip Berlin to Amsterdam
+
+time taken: 0.0041578688

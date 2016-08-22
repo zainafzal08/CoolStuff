@@ -1,0 +1,10 @@
+
+Transfer 60 London 
+Transfer 40 Paris
+Transfer 40 Berlin
+Time 100 London Paris 
+Time 120 London Berlin
+Time 80 Berlin Paris
+Trip London Berlin
+Trip Paris London
+Trip Paris Berlin

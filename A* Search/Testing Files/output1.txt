@@ -1,0 +1,6 @@
+3 nodes expanded
+cost = 240
+Trip London to Paris
+Trip Paris to London
+
+time taken: 0.0032280858

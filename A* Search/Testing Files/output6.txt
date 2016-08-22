@@ -1,0 +1,8 @@
+20 nodes expanded
+cost = 970
+Trip London to Brussels
+Trip Brussels to Sydney
+Trip Sydney to Berlin
+Trip Berlin to Amsterdam
+
+time taken: 0.0037718359
