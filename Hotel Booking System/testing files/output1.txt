@@ -1,0 +1,77 @@
+Reservation 1 SolarSystem Earth Mars Pluto Venus
+Reservation 3 SolarSystem Pluto
+Reservation 2 GrandHotel RoomA RoomB
+Reservation 4 SolarSystem Earth Jupiter
+Reservation 5 SolarSystem Saturn Neptune
+Reservation 8 SolarSystem Earth Mars Jupiter Pluto Venus
+Reservation 6 SolarSystem Earth Jupiter Pluto
+Reservation 7 SolarSystem Pluto Venus Mercury Sun
+SolarSystem Earth Apr 12 7 Jul 08 1 Sep 01 20 Nov 06 26
+SolarSystem Mars Apr 12 7 Jul 08 1
+SolarSystem Jupiter Jul 08 1 Sep 01 20 Nov 06 26
+SolarSystem Pluto Jan 02 36 Apr 12 7 Jul 08 1 Sep 01 20 Dec 01 29
+SolarSystem Venus Apr 12 7 Jul 08 1 Dec 01 29
+SolarSystem Saturn Jan 01 366
+SolarSystem Uranus
+SolarSystem Neptune Jan 01 366
+SolarSystem Mercury Dec 01 29
+SolarSystem Sun Dec 01 29
+GrandHotel UltraRoomA
+GrandHotel UltraRoomB
+GrandHotel GrandRoomA
+GrandHotel RoomA Feb 06 163
+GrandHotel RoomB Feb 06 163
+GrandHotel GrandRoomB
+GrandHotel UltraRoomC
+GrandHotel GrandRoomC
+GrandHotel RoomC
+GrandHotel GrandRoomD
+Change 7 SolarSystem Pluto Venus Mercury Sun
+Change 4 SolarSystem Earth Jupiter
+Change 3 SolarSystem Pluto Venus
+Change 5 SolarSystem Saturn Neptune
+Change 1 SolarSystem Earth Mars Jupiter
+Change 6 SolarSystem Pluto Venus
+SolarSystem Earth Apr 12 14 Jul 08 1 Nov 06 55
+SolarSystem Mars Apr 12 14 Jul 08 1
+SolarSystem Jupiter Apr 12 14 Jul 08 1 Nov 06 55
+SolarSystem Pluto Jan 02 36 Jul 08 1 Sep 05 21 Dec 01 6
+SolarSystem Venus Jan 02 36 Jul 08 1 Sep 05 21 Dec 01 6
+SolarSystem Saturn Jan 01 366
+SolarSystem Uranus
+SolarSystem Neptune Jan 01 366
+SolarSystem Mercury Dec 01 6
+SolarSystem Sun Dec 01 6
+GrandHotel UltraRoomA
+GrandHotel UltraRoomB
+GrandHotel GrandRoomA
+GrandHotel RoomA Feb 06 163
+GrandHotel RoomB Feb 06 163
+GrandHotel GrandRoomB
+GrandHotel UltraRoomC
+GrandHotel GrandRoomC
+GrandHotel RoomC
+GrandHotel GrandRoomD
+Cancel 7
+Cancel 3
+Cancel 2
+SolarSystem Earth Apr 12 14 Jul 08 1 Nov 06 55
+SolarSystem Mars Apr 12 14 Jul 08 1
+SolarSystem Jupiter Apr 12 14 Jul 08 1 Nov 06 55
+SolarSystem Pluto Jul 08 1 Sep 05 21
+SolarSystem Venus Jul 08 1 Sep 05 21
+SolarSystem Saturn Jan 01 366
+SolarSystem Uranus
+SolarSystem Neptune Jan 01 366
+SolarSystem Mercury
+SolarSystem Sun
+GrandHotel UltraRoomA
+GrandHotel UltraRoomB
+GrandHotel GrandRoomA
+GrandHotel RoomA
+GrandHotel RoomB
+GrandHotel GrandRoomB
+GrandHotel UltraRoomC
+GrandHotel GrandRoomC
+GrandHotel RoomC
+GrandHotel GrandRoomD
