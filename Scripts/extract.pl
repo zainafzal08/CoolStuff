@@ -4,7 +4,7 @@
 #In current year
 use LWP::Simple;
 
-$url='http://timetable.unsw.edu.au/2016/COMP1917.html';
+$url='http://timetable.unsw.edu.au/2016/$ARGV[0].html';
 $content = get "$url";
 $currSem=0;
 $inTr=0;
