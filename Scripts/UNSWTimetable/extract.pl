@@ -4,8 +4,8 @@
 #In current year
 use LWP::Simple;
 
-$url='http://timetable.unsw.edu.au/2016/$ARGV[0].html';
-$content = get "$url";
+$url='http://timetable.unsw.edu.au/2017/$ARGV[0].html';
+$content="hi \n hi";
 $currSem=0;
 $inTr=0;
 my @lines = split /\n/, $content;
