@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+	"name": "Sleep Helper",
+	"description": "Make your new tab give you sleep info",
+	"version": "0.1",
+	"author": "Zain Afzal",
+	"incognito": "split",
+	"chrome_url_overrides": {
+		"newtab": "live.html"
+	}
+}
