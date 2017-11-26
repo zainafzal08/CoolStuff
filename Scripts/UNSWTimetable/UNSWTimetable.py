@@ -83,7 +83,7 @@ def extract(courseCode, semester):
 		else:
 			result[l[0]].append(l[2:])
 	return result
-
+	
 if __name__ == "__main__":
 	nice = extract("COMP1511", 1)
 	for k in nice:
