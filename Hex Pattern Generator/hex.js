@@ -1,6 +1,6 @@
 function render(){
 	let display = document.getElementById("display");
-	let g = ["#e96443","#904e95"];
+	let g = ["#00d2ff","#3a7bd5"];
 	display.innerHTML = hexPattern(50,800,800,g,1);
 }
 
@@ -98,8 +98,9 @@ function normalise(a){
 	return a;
 }
 function circularInterpol(x,y,t){
+	// 191 -> 215
 	if (y >= x && y-x <= 180) {
-		return normalise((y-x)*t);
+		return normalise(x+(y-x)*t);
 	} else if (y >= x && y-x > 180) {
 		return normalise(x-t*(360-(y-x)));
 	} else if (x > y && x-y <= 180) {
@@ -158,6 +159,7 @@ function hextoHSV(hex){
 	let value = cMax;
 	let hue = calcHue(red,green,blue,cMax,delta);
 	let sat = calcSat(delta, cMax);
+	console.log([hue,sat,value]);
 	return [hue,sat,value];
 }
 
@@ -188,7 +190,6 @@ function HSVtoHex(h,s,v){
 	let r = Math.floor((raw[0]+m)*255);
 	let g = Math.floor((raw[1]+m)*255);
 	let b = Math.floor((raw[2]+m)*255);
-	console.log(h+","+s+","+v);
 	return rgbToHex(r,g,b);
 }
 
