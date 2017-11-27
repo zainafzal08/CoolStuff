@@ -1,7 +1,7 @@
 function render(){
 	let display = document.getElementById("display");
-	let g = ["#C33764","#1D2671"];
-	display.innerHTML = hexPattern(50,800,800,g,10);
+	let g = ["#e96443","#904e95"];
+	display.innerHTML = hexPattern(50,800,800,g,1);
 }
 
 /*
@@ -90,11 +90,30 @@ function point(x,y){
  * Color functions
  */
 
+function normalise(a){
+	if(a < 0)
+		return 360+a;
+	if(a>360)
+		return a%360;
+	return a;
+}
+function circularInterpol(x,y,t){
+	if (y >= x && y-x <= 180) {
+		return normalise((y-x)*t);
+	} else if (y >= x && y-x > 180) {
+		return normalise(x-t*(360-(y-x)));
+	} else if (x > y && x-y <= 180) {
+		return normalise(x-t*(x-y));
+	} else if (x > y && x-y > 180) {
+		return normalise(x+t*(360-(x-y)));
+	}
+}
 
 function getColor(num,gradient) {
 	let start = hextoHSV(gradient[0]);
 	let end = hextoHSV(gradient[1]);
-	let h = start[0]+((end[0]-start[0]))*num;
+	
+	let h = circularInterpol(start[0],end[0],num);
 	let s = start[1]+((end[1]-start[1]))*num;
 	let v = start[2]+((end[2]-start[2]))*num;
 	return HSVtoHex(h,s,v);
@@ -169,6 +188,7 @@ function HSVtoHex(h,s,v){
 	let r = Math.floor((raw[0]+m)*255);
 	let g = Math.floor((raw[1]+m)*255);
 	let b = Math.floor((raw[2]+m)*255);
+	console.log(h+","+s+","+v);
 	return rgbToHex(r,g,b);
 }
 
