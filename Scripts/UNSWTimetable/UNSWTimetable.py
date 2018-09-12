@@ -20,16 +20,16 @@ def clean(input):
 	return result
 
 #gets all class data for a given courseCode in a given semester
-def extract(courseCode, semester):
-	url = "http://timetable.unsw.edu.au/2017/"+courseCode.upper()+".html"
+def extract(courseCode, semester, year):
+	url = "http://timetable.unsw.edu.au/%d/%s.html"%(year,courseCode.upper())
 	r = requests.get(url)
-	array = r.content.split('\n')
+	array = r.text.split('\n')
 	currSemester = None
 	currRow = []
 	final = []
 	inRow = False
 	isRunning = False
-	
+
 	for i,line in enumerate(array):
 		# update current semester
 		try:
@@ -83,10 +83,21 @@ def extract(courseCode, semester):
 		else:
 			result[l[0]].append(l[2:])
 	return result
-	
+
+def extractAndWrite(f,course,sem,year):
+	s = extract(course, sem, year)
+	for k in s:
+		f.write("--%s--\n"%k)
+		for r in s[k]:
+			f.write("	".join(r))
+			f.write("\n")
+
 if __name__ == "__main__":
-	nice = extract("COMP1511", 1)
-	for k in nice:
-		print("--"+k+"--")
-		for r in nice[k]:
-			print("	".join(r))
+	f = open("all.txt","w")
+	courses = ["COMP1511"]
+	sems = [1,2]
+	year = 2017
+	for course in courses:
+		for sem in sems:
+			extractAndWrite(f,course,sem,year)
+	f.close()
